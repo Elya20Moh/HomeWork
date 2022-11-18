@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Pages.dart';
+import 'package:practice/shurahs/surah_Ikhlas.dart';
 
 class InputPage extends StatefulWidget {
   const InputPage({super.key});
@@ -21,16 +21,11 @@ class _InputPageState extends State<InputPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.all(15),
-                      child: Text(
-                        "قرآن الکریم",
-                        style: TextStyle(
-                          fontSize: 35,
-                          color: Colors.white,
-                          fontFamily: "arabic"
-                        ),
-                      ),
-                    ),
+                        margin: EdgeInsets.all(15),
+                        child: Text(
+                          "قرآن الکریم",
+                          style: TextStyle(fontSize: 35, color: Colors.white,),
+                        ),),
                   ),
                   Expanded(
                     child: CircleAvatar(
@@ -52,13 +47,15 @@ class _InputPageState extends State<InputPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Pages(),
+                            builder: (context) => const Ikhlas(),
                           ),
                         );
                       },
                       style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(),
-                        primary: Color(0xFFb3b4ae),
+
+                        primary:Color(0xFFb3b4ae),
+
                         padding:
                             EdgeInsets.symmetric(vertical: 5, horizontal: 90),
                       ),
@@ -74,13 +71,13 @@ class _InputPageState extends State<InputPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Pages(),
+                            builder: (context) => const Ikhlas(),
                           ),
                         );
                       },
                       style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(),
-                        primary: Color(0xFFb3b4ae),
+                        primary:Color(0xFFb3b4ae),
                         padding:
                             EdgeInsets.symmetric(vertical: 5, horizontal: 95),
                       ),
@@ -108,11 +105,12 @@ class _InputPageState extends State<InputPage> {
                       child: Directionality(
                         textDirection: TextDirection.rtl,
                         child: Padding(
-                          padding: const EdgeInsets.fromLTRB(90, 165, 10, 0),
+                          padding: const EdgeInsets.fromLTRB(90,160, 10, 0),
                           child: Text(
                             'اِنَّاٌ أَنزَلْنَهُ فِی لَیلَةِ اٌلْقَدْر',
                             style: TextStyle(
                               color: Color(0xFFb3b4ae),
+
                               fontSize: 25,
                             ),
                           ),

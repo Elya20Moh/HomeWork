@@ -1,4 +1,4 @@
-# holy_quran
+# practice
 
 A new Flutter project.
 
