@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
-import '/constants/constants.dart';
-import '/view/splash_screen.dart';
+import 'package:practice/constants/constants.dart';
+import 'package:practice/view/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
-
 
 }
 

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'index_of_surah.dart';
+import 'package:practice/view/index_of_surah.dart';
+import 'package:practice/view/index_of_surah1.dart';
+
 
 class InputPage extends StatefulWidget {
-  const InputPage ({Key? key}) :super (key: key);
+  const InputPage({Key? key}) : super(key: key);
 
   @override
   _InputPageState createState() => _InputPageState();
@@ -24,13 +26,17 @@ class _InputPageState extends State<InputPage> {
                       margin: EdgeInsets.all(15),
                       child: Text(
                         "قرآن الکریم",
-                        style: TextStyle(fontSize: 35, color: Colors.white,),
-                      ),),
+                        style: TextStyle(
+                          fontSize: 35,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: CircleAvatar(
                       backgroundColor: Colors.black,
-                      backgroundImage: AssetImage("assets/q2.JPG"),
+                      backgroundImage: AssetImage("images/besm.JPG"),
                       maxRadius: 100,
                     ),
                   ),
@@ -47,17 +53,15 @@ class _InputPageState extends State<InputPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => IndexOfSurah(),
+                            builder: (context) => listOfSurah(),
                           ),
                         );
                       },
                       style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(),
-
-                        primary:Color(0xFFb3b4ae),
-
+                        primary: Color(0xFFb3b4ae),
                         padding:
-                        EdgeInsets.symmetric(vertical: 5, horizontal: 90),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 90),
                       ),
                       child: Text(
                         "ترجمه ",
@@ -70,17 +74,16 @@ class _InputPageState extends State<InputPage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-
                           MaterialPageRoute(
-                            builder: (context) =>  IndexOfSurah(),
+                            builder: (context) => listOfSurah1(),
                           ),
                         );
                       },
                       style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(),
-                        primary:Color(0xFFb3b4ae),
+                        primary: Color(0xFFb3b4ae),
                         padding:
-                        EdgeInsets.symmetric(vertical: 5, horizontal: 95),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 95),
                       ),
                       child: Text(
                         "تلاوت",
@@ -98,7 +101,7 @@ class _InputPageState extends State<InputPage> {
                     Container(
                       child: Image(
                         image: AssetImage(
-                          "assets/q1.JPG",
+                          "images/q1.JPG",
                         ),
                       ),
                     ),
@@ -106,12 +109,11 @@ class _InputPageState extends State<InputPage> {
                       child: Directionality(
                         textDirection: TextDirection.rtl,
                         child: Padding(
-                          padding: const EdgeInsets.fromLTRB(90,200, 10, 0),
+                          padding: const EdgeInsets.fromLTRB(90, 180, 10, 0),
                           child: Text(
                             'اِنَّاٌ أَنزَلْنَهُ فِی لَیلَةِ اٌلْقَدْر',
                             style: TextStyle(
                               color: Color(0xFFb3b4ae),
-
                               fontSize: 25,
                             ),
                           ),

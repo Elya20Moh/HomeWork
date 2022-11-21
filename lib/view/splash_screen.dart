@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'input_page.dart';
+import 'package:practice/view/input_page.dart';
 class SplashScreen extends StatefulWidget {
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
              bottom: 0,
              left: 0,
              right: 0,
-             child: Image.asset('assets/Quran1.png'),
+             child: Image.asset('images/Quran1.png'),
            ),
           ],
           ),
